@@ -4,22 +4,25 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 
+
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
+      
     },
     title: {
       flexGrow: 1,
       textAlign: 'left',
       fontType: 'bold',
-      fontFamily: 'Courier, sans-serif', 
+      fontFamily: 'Mukta, sans-serif', 
       fontSize: '35px', 
-      color: '#CDDC39'
+      color: 'white',
+      textDecoration: 'none',
     },
     appBar:{
-      backgroundColor: '#11153e',
+      background: 'linear-gradient(45deg, #5F259E 20%, #FF8E53 90%)',
       shadows: ['none'],
     },
     greeting:{
@@ -31,10 +34,13 @@ const useStyles = makeStyles(theme => ({
     },
     links:{
       textDecoration: 'none',
-    }
-  
+    },
+    button:{
+      backgroundColor: '#5F259E',
+      color: 'white',
+    },
   }));
-
+  
 const NavBar = () => {
     const classes = useStyles();
     return (
@@ -43,19 +49,19 @@ const NavBar = () => {
           <Toolbar>
             <Link className={classes.title} to={'/'}>
                 <Typography variant="h6" className={classes.title} color="inherit" >
-                CRUD App
+                College Management System
                 </Typography>
             </Link>
             
-  
+
             <Link className={classes.links} to={'/campuses'} >
-              <Button variant="contained" color="primary" style={{marginRight: '10px'}}>
+              <Button variant="contained" style={{marginRight: '10px'}} className={classes.button}>
                 All Campuses
               </Button>
             </Link>
   
             <Link className={classes.links} to={'/students'} >
-              <Button variant="contained" color="primary">
+              <Button variant="contained" className={classes.button}>
                 All Students
               </Button>
             </Link>
