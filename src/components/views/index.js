@@ -5,3 +5,4 @@ export { default as HomePageView } from "./HomePageView";
 export { default as AllStudentsView } from "./AllStudentsView";
 export { default as NavBar } from "./NavBar";
 export {default as StudentView} from "./StudentView";
+export { default as AddCampusView } from "./AddCampusView";

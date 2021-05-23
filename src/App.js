@@ -11,6 +11,7 @@ import { Switch, Route } from "react-router-dom";
 //Components
 import {
   HomePageContainer,
+  AddCampusContainer,
   CampusContainer,
   StudentContainer,
   AllCampusesContainer,
@@ -148,6 +149,7 @@ const App = () => {
         <Route exact path="/campus/:id" component={CampusContainer} />
         <Route exact path="/students" component={AllStudentsContainer} />
         <Route exact path="/student/:id" component={StudentContainer} />
+        <Route exact path="/addcampus" component={AddCampusContainer} />
       </Switch>
     </div>
   );
