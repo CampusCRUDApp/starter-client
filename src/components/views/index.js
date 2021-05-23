@@ -5,5 +5,10 @@ export { default as HomePageView } from "./HomePageView";
 export { default as HomePageView } from "./HomePageView";
 export { default as AllStudentsView } from "./AllStudentsView";
 export { default as NavBar } from "./NavBar";
+<<<<<<< Updated upstream
 export { default as HomePageView } from "./HomePageView";
 export { default as AllStudentsView } from "./AllStudentsView";
+=======
+export {default as StudentView} from "./StudentView";
+export { default as Footer } from "./Footer";
+>>>>>>> Stashed changes

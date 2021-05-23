@@ -6,3 +6,31 @@
 .App-link {
   color: #61dafb;
 }
+<<<<<<< Updated upstream
+=======
+h1{
+  font-size: 50px;
+}
+h2{
+  font-size: 45px;
+}
+h3{
+  font-size: 35px;
+}
+p{
+  font-size: 25px;
+}
+.greeting{
+  text-align: center;
+  font-family: 'Mukta', sans-serif;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.greeting-title{
+  color: purple;
+}
+.buttons{
+  color: #61dafb;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+>>>>>>> Stashed changes

@@ -2,14 +2,23 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import NavBar from "./NavBar";
+import Footer from './Footer';
 
 const AllStudentsView = (props) => {
     if (!props.allStudents.length) {
         return (
+<<<<<<< Updated upstream
         <div>
             <NavBar />
             <h1>There are no students.</h1>
         </div>
+=======
+            <div>
+                <NavBar />
+                <h1>There are no students.</h1>
+                <Footer />
+            </div>
+>>>>>>> Stashed changes
         );
     }
     return (
@@ -41,6 +50,7 @@ const AllStudentsView = (props) => {
                     </div>
                 )
             })}
+            <Footer />
         </div>
     );
 };

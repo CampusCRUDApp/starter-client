@@ -2,6 +2,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import NavBar from './NavBar'; 
+import Footer from './Footer';
 
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
@@ -47,6 +48,7 @@ const CampusView = (props) => {
             }))
       }
       </ul>
+      <Footer />
     </div>
   );
 
