@@ -18,14 +18,10 @@ const CampusView = (props) => {
   return (     
     <div>
       <NavBar />
-
-    
-
       <h1>{campus.name}</h1>
       <p>{campus.address}</p>
       <p>{campus.description}</p>
       <ul>
-
       {
           (!hasStudents) ? <li>There are zero students registered here.</li>:(
             campus.students.map( student => {
