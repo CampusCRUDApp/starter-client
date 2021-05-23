@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-
+import Footer from './Footer';
 import NavBar from "./NavBar";
 
 const AllCampusesView = (props) => {
@@ -11,6 +11,7 @@ const AllCampusesView = (props) => {
       <div>
         <NavBar />
         <h1>There are no campuses.</h1>
+        <Footer />
       </div>
     );
     
@@ -28,6 +29,7 @@ const AllCampusesView = (props) => {
             <p>{campus.description}</p>
         </div>
       ))}
+      <Footer />
     </div>
   );
 };

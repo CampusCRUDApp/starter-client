@@ -23,7 +23,6 @@ p{
 }
 .greeting{
   text-align: center;
-  border: 2px solid red;
   font-family: 'Mukta', sans-serif;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -34,4 +33,5 @@ p{
 .buttons{
   color: #61dafb;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');

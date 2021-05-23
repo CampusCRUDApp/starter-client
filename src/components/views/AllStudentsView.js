@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import NavBar from "./NavBar";
+import Footer from './Footer';
 
 
 const AllStudentsView = (props) => {
@@ -10,6 +11,7 @@ const AllStudentsView = (props) => {
             <div>
                 <NavBar />
                 <h1>There are no students.</h1>
+                <Footer />
             </div>
         );
         
@@ -29,6 +31,7 @@ const AllStudentsView = (props) => {
                     </div>
                 )
             })}
+            <Footer />
         </div>
     );
 };
