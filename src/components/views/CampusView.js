@@ -1,11 +1,8 @@
-
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import NavBar from './NavBar'; 
 import Footer from './Footer';
 
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 
 
 const CampusView = (props) => {
@@ -19,19 +16,13 @@ const CampusView = (props) => {
   //no students
 
 
-  return (
-
-    <div>      
+  return (     
     <div>
       <NavBar />
-
-    <div>
-
       <h1>{campus.name}</h1>
       <p>{campus.address}</p>
       <p>{campus.description}</p>
       <ul>
-
       {
           (!hasStudents) ? <li>There are zero students registered here.</li>:(
             campus.students.map( student => {

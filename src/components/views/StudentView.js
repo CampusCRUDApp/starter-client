@@ -3,28 +3,37 @@ import { Link } from "react-router-dom";
 
 const StudentView = (props) => {
     const {student} = props;
-    let hasCampus = student.campus !== null;
+    console.log(student);
+     let campus = student.campus;
 
-    console.log(hasCampus);
-    //console.log(student.campus);
-    return (
-        <div>
+    // waiting for students array to be populated
+    if( campus === null || campus === undefined){
+        campus = student.firstname + " does not have thier college listed.";
+
+        return(<div>
             <h1>{student.firstname} {student.lastname}</h1>
-            {
-                (!hasCampus) ? <p>This student is not currently registered to any campus.</p>:(
-
-                <Link to={`/campus/${student.campus.id}`}>
-                    <p>{student.campus.name}</p>
-                </Link>
-
-
-                )
-            }
             <p>{student.email}</p>
+            <img src={student.imageUrl} alt="student id photo"></img>
             <p>{student.gpa}</p>
-        </div>
-    )
+            <p>{campus}</p>
+        </div>)
 
-}
+
+    }
+    else{
+        return(<div>
+            <h1>{student.firstname} {student.lastname}</h1>
+            <p>{student.email}</p>
+            <img src={student.imageUrl} alt="student id photo"></img>
+            <p>{student.gpa}</p>
+            <Link to={`/campus/${campus.id}`}>
+                <li>{campus.name}</li>
+            </Link>
+        </div>)
+
+
+    }
+
+};
 
 export default StudentView;
