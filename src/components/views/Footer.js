@@ -45,6 +45,10 @@ const Footer = () => {
             <Link className={classes.links} to={'/students'}>
             All Students
             </Link>
+
+            <Link className={classes.links} to={'/addcampus'}>
+            Add Campuses
+            </Link>
         </div>
     );
 }
