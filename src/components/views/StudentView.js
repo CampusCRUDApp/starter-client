@@ -1,5 +1,8 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import NavBar from './NavBar';
+import {Button} from '@material-ui/core/';
+import { EditStudentView } from "./";
 
 const StudentView = (props) => {
     const {student} = props;
@@ -11,6 +14,8 @@ const StudentView = (props) => {
         campus = student.firstname + " does not have thier college listed.";
 
         return(<div>
+            <NavBar />
+
             <h1>{student.firstname} {student.lastname}</h1>
             <p>{student.email}</p>
             <img src={student.imageUrl} alt="student id photo"></img>
@@ -22,6 +27,9 @@ const StudentView = (props) => {
     }
     else{
         return(<div>
+            <NavBar />
+
+            <input type="button" value="Edit Student Profile" method="edit" onClick={() => props.editStudent(props)}></input>
             <h1>{student.firstname} {student.lastname}</h1>
             <p>{student.email}</p>
             <img src={student.imageUrl} alt="student id photo"></img>

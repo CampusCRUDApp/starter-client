@@ -4,4 +4,8 @@ export { default as AllCampusesContainer } from "./AllCampusesContainer";
 export { default as CampusContainer } from "./CampusContainer";
 export { default as AllStudentsContainer } from "./AllStudentsContainer";
 export { default as StudentContainer } from "./StudentContainer";
+export { default as AddCampusContainer } from "./AddCampusContainer";
+export { default as AddStudentContainer } from "./AddStudentContainer";
+export { default as EditStudentContainer } from "./EditStudentContainer";
+
 

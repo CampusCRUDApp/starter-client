@@ -10,6 +10,7 @@ class CampusContainer extends Component {
     this.props.fetchCampus(this.props.match.params.id);
   }
 
+
   render() {
     return (
       <CampusView 
